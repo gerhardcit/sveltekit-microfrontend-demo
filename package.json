@@ -1,0 +1,18 @@
+{
+	"name": "module-federation-vite-sveltekit",
+	"version": "1.0.0",
+	"description": "Module Federation Vite + SvelteKit is now possible",
+	"scripts": {
+		"install:deps": "pnpm --filter module-federation-vite-sveltekit-* install",
+		"postinstall:deps": "pnpm --filter module-federation-vite-sveltekit-* run build",
+		"dev": "pnpm --filter module-federation-vite-sveltekit-* dev",
+		"build": "pnpm --filter module-federation-vite-sveltekit-* build",
+		"preview": "pnpm --filter module-federation-vite-sveltekit-* preview"
+	},
+	"author": {
+		"name": "Giorgio Boa",
+		"email": "giorgiob.boa@gmail.com",
+		"url": "https://github.com/gioboa"
+	},
+	"license": "ISC"
+}
