@@ -9,7 +9,10 @@ export default defineConfig({
 			name: 'remote',
 			filename: 'remoteEntry.js',
 			exposes: {
-				'./remote-app': './src/routes/+page.svelte',
+				// './remote-app': './src/routes/+page.svelte',
+				// try and import the layout instead of the page
+				// svelte routing does not seem to work with module federation
+				'./remote-app': './src/routes/+layout.svelte',
 			},
 		}),
 	],
